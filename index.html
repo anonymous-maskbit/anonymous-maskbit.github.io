@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Anonymous MaskBit.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Additional results</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5">MaskBit Rebuttal Visualizations</h2>
+        <p style="margin-bottom: 10px;">We provide qualitative results for the following experiments: </p>
+        <p style="margin-bottom: 10px;">1. COCO 0-shot bit flipping. </p>
+        <p style="margin-bottom: 10px;">2. Nearest Neighbor Analysis w. LPIPS and Hamming distance. </p>
+        <p style="margin-bottom: 10px;">3. VQGAN+ with corrupted latent tokens. </p>
+      </div>
+    </div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5">COCO 0-shot bit flipping</h2>
+        <p style="margin-bottom: 10px;">The top left image is the original image, and the bottom left image is the recosntructed image. All other images are obtained by flipping the i-th bit for all bit tokens and decoding them into images.</p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <img src="./static/images/bit-flipping-coco/0000140_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0000476_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0002062_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0002126_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0002480_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0002851_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0003080_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0004053_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0004065_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0004073_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-coco/0004916_joined.png" style="margin-bottom: 20px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5">Nearest Neighbor Analysis w. LPIPS and Hamming distance</h2>
+        <p style="margin-bottom: 10px;">The left image is the generated image. The 10 samples at the top are the nearest neighbors from the training set in terms of LPIPS distance, while the 10 samples at the bottom are nearest neighbors from the training set in terms of Hamming distance.</p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <img src="./static/images/nearest-neighbor/Slide1.png"/>
+        <hr>
+        <img src="./static/images/nearest-neighbor/Slide2.png"/>
+        <hr>
+        <img src="./static/images/nearest-neighbor/Slide3.png"/>
+        <hr>
+        <img src="./static/images/nearest-neighbor/Slide4.png"/>
+        <hr>
+        <img src="./static/images/nearest-neighbor/Slide5.png"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5">VQGAN+ with 256 corruptions in latent space on ImageNet</h2>
+        <p style="margin-bottom: 10px;">We note all results look like the ones below.</p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <img src="./static/images/bit-flipping-vqgan/0006257_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-vqgan/0028474_joined.png" style="margin-bottom: 20px;"/>
+        <img src="./static/images/bit-flipping-vqgan/0033495_joined.png" style="margin-bottom: 20px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
